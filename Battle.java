@@ -132,7 +132,7 @@ public class Battle extends World
             if(e.eHP > 0)
             {
                 attack3(e.getX(), e.getY(), new GreenfootImage("plantAtt.png"));
-                EeveeAtt(pX - 150, pY - 150, new GreenfootImage("EeveeAtt.png"));
+                eeveeAtt(pX - 150, pY - 150, new GreenfootImage("EeveeAtt.png"));
                 
             }
             if(e.eHP <= 0)
@@ -330,7 +330,7 @@ public class Battle extends World
         }
     }
     
-    public void EeveeAtt(int x, int y, GreenfootImage image)
+    public void eeveeAtt(int x, int y, GreenfootImage image)
     {
         EeveeAttack ea = new EeveeAttack(image);
         if(timerAtt.millisElapsed() > 6000)
@@ -339,5 +339,10 @@ public class Battle extends World
             
             timerAtt.mark();
         }
+    }
+    
+    public void rowletAtt(int x, int y, GreenfootImage image)
+    {
+        
     }
 }
